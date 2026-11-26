@@ -1,0 +1,47 @@
+# Environments & Secrets (Critical for Security Repos)
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.cer
+*secret*
+*credential*
+token_cache.bin
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local Data, Raw Logs & Output Reports (Prevent Tenant Data Leaks)
+*.csv
+*.json
+*.jsonl
+*.log
+*.pcap
+*.pcapng
+!cloud_policies/*.json
+!sample_data/*.json
+!sample_data/*.csv
+
+# OS Artifacts
+.DS_Store
+Thumbs.db
